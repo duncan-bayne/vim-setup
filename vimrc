@@ -8,3 +8,10 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-easymotion'
+
+" start NERDTree automagically
+autocmd vimenter * NERDTree
