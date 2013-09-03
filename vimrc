@@ -1,4 +1,16 @@
 set nocompatible               " be iMproved
+
+" suggestions from Vim cheat sheet
+set ruler
+set laststatus=2
+set showcmd
+set showmode
+set number
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -15,7 +27,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-ruby/vim-ruby'
 
 " start NERDTree automagically
-autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 
 " recommended settings for Vim Ruby
 syntax on             " Enable syntax highlighting
